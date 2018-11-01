@@ -107,8 +107,8 @@ func main() {
 func loadConfig() config {
 	return config{
 		ThingsURL: mainflux.Env(envThingsURL, defThingsURL),
-		NatsURL:  mainflux.Env(envNatsURL, defNatsURL),
-		LogLevel: mainflux.Env(envLogLevel, defLogLevel),
-		Port:     mainflux.Env(envPort, defPort),
+		NatsURL:   mainflux.Env(envNatsURL, defNatsURL),
+		LogLevel:  mainflux.Env(envLogLevel, defLogLevel),
+		Port:      mainflux.Env(envPort, defPort),
 	}
 }
